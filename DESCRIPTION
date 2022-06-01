@@ -56,7 +56,7 @@ Suggests:
     gamlss.data,
     ggplot2,
     GLMMadaptive,
-    glmmADMB,
+    glmmadmb,
     glmmTMB,
     lmerTest,
     lme4,
