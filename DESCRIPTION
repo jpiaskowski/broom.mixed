@@ -36,8 +36,7 @@ Description: Convert fitted objects from various R mixed-model packages
     data such as predictions, residuals and cluster assignments; and glance(), which
     provides a one-row summary of model-level statistics.
 Remotes: 
-  github::bbolker/glmmadmb, 
-  svn::http://glmmadmb.r-forge.r-project.org/
+  github::bbolker/glmmadmb
 Imports:
     broom,
     coda,
