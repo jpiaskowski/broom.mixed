@@ -54,7 +54,7 @@ brmsfit-objects
 
     <div class="ref-description section level2">
     <p>These methods tidy the estimates from
-<code><a href="https://rdrr.io/pkg/brms/man/brmsfit-class.html" class="external-link">brmsfit-objects</a></code>
+<code>brmsfit-objects</code>
 (fitted model objects from the <span class="pkg">brms</span> package) into a summary.</p>
     </div>
 
@@ -85,7 +85,7 @@ brmsfit-objects
     <h2 id="arguments">Arguments<a class="anchor" aria-label="anchor" href="#arguments"></a></h2>
     <dl><dt>x</dt>
 <dd><p>Fitted model object from the <span class="pkg">brms</span> package. See
-<code><a href="https://rdrr.io/pkg/brms/man/brmsfit-class.html" class="external-link">brmsfit-class</a></code>.</p></dd>
+<code>brmsfit-class</code>.</p></dd>
 <dt>parameters</dt>
 <dd><p>Names of parameters for which a summary should be
 returned, as given by a character vector or regular expressions.
@@ -119,7 +119,7 @@ behaviour of other model types?</p></dd>
 <dd><p>Extra arguments, not used</p></dd>
 <dt>looic</dt>
 <dd><p>Should the LOO Information Criterion (and related info) be
-included? See <code><a href="https://mc-stan.org/rstan/reference/stanfit-method-loo.html" class="external-link">loo.stanfit</a></code> for details. (This
+included? See <code>loo.stanfit</code> for details. (This
 can be slow for models fit to large datasets.)</p></dd>
 <dt>data</dt>
 <dd><p>data frame</p></dd>
@@ -166,7 +166,7 @@ are used for compatibility with other (frequentist) mixed model types.</p>
     </div>
     <div class="section level2">
     <h2 id="see-also">See also<a class="anchor" aria-label="anchor" href="#see-also"></a></h2>
-    <div class="dont-index"><p><code><a href="https://rdrr.io/pkg/brms/man/brms-package.html" class="external-link">brms</a></code>, <code><a href="https://rdrr.io/pkg/brms/man/brmsfit-class.html" class="external-link">brmsfit-class</a></code></p></div>
+    <div class="dont-index"><p><code>brms</code>, <code>brmsfit-class</code></p></div>
     </div>
 
     <div class="section level2">
@@ -196,28 +196,7 @@ are used for compatibility with other (frequentist) mixed model types.</p>
 <span class="r-in">   <span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="fu"><a href="https://generics.r-lib.org/reference/augment.html" class="external-link">augment</a></span><span class="op">(</span><span class="va">fit</span><span class="op">)</span><span class="op">)</span></span>
 <span class="r-in"><span class="op">}</span></span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> Loading required package: brms</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> Loading required package: Rcpp</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> Loading 'brms' package (version 2.17.0). Useful instructions</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> can be found by typing help('brms'). A more detailed introduction</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> to the package is available through vignette('brms_overview').</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> Attaching package: ‘brms’</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> The following object is masked from ‘package:lme4’:</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span>     ngrps</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> The following object is masked from ‘package:stats’:</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span>     ar</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> Loading required namespace: rstanarm</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 6 × 7</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>     mpg    wt   cyl  gear .fitted .se.fit .resid</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">1</span>  21    2.62     6     4    22.4    2.82 -<span style="color: #BB0000;">1.51</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">2</span>  21    2.88     6     4    21.9    2.68 -<span style="color: #BB0000;">0.323</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">3</span>  22.8  2.32     4     4    26.6    2.41 -<span style="color: #BB0000;">3.65</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">4</span>  21.4  3.22     6     3    19.2    2.99  2.01 </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">5</span>  18.7  3.44     8     3    17.2    2.27  1.34 </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">6</span>  18.1  3.46     6     3    18.4    2.76 -<span style="color: #BB0000;">0.455</span></span>
+<span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>there is no package called ‘brms’</span>
 <span class="r-in"></span>
 </code></pre></div>
     </div>
