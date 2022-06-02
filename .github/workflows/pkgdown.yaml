@@ -1,32 +1,10 @@
 # Workflow derived from https://github.com/r-lib/actions/tree/v2/examples
 # Need help debugging build failures? Start at https://github.com/r-lib/actions#where-to-find-help
 on:
-  push:  
-    branches: 
-    - "main"
-    - "master"
-    paths: 
-    - ".github/workflows/pkgdown.yaml"
-    - "DESCRIPTION"
-    - "NAMESPACE"
-    - ".Rbuildignore"
-    - "man/**"
-    - "man-roxygen/**""
-    - "R/**"
-    - "inst/**"
-    - "vignettes/**"
+  push:
+    branches: [main, master]
   pull_request:
     branches: [main, master]
-    paths:
-    - ".github/workflows/pkgdown.yaml"
-    - "DESCRIPTION"
-    - "NAMESPACE"
-    - ".Rbuildignore"
-    - "man/**"
-    - "man-roxygen/**""
-    - "R/**"
-    - "inst/**"
-    - "vignettes/**"
   release:
     types: [published]
   workflow_dispatch:
