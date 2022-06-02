@@ -4,7 +4,7 @@ author: "Ben Bolker"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{introduction to broom.mixed}
+  %\VignetteIndexEntry{Introduction to `broom.mixed`}
   %\VignetteEngine{knitr::rmarkdown}
   \usepackage[utf8]{inputenc}
 ---

@@ -35,7 +35,6 @@ Description: Convert fitted objects from various R mixed-model packages
     coefficients of a regression; augment(), which adds columns to the original
     data such as predictions, residuals and cluster assignments; and glance(), which
     provides a one-row summary of model-level statistics.
-Remotes: 
 Imports:
     broom,
     coda,
