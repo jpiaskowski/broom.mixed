@@ -3,8 +3,5 @@ pkgdown: 2.0.3
 pkgdown_sha: ~
 articles:
   broom_mixed_intro: broom_mixed_intro.html
-last_built: 2022-06-02T16:46Z
-urls:
-  reference: https://jpiaskowski.github.io/broom.mixed/reference
-  article: https://jpiaskowski.github.io/broom.mixed/articles
+last_built: 2022-06-02T17:38Z
 
