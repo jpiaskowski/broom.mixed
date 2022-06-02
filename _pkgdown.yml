@@ -1,20 +1,40 @@
 url: https://jpiaskowski.github.io/broom.mixed/
 template:
   bootstrap: 5
+
 development:
   mode: auto
+
+destination: docs
+
 navbar:
   structure:
-    left:
-    - intro
-    - reference
-    - articles
-    - news
-    right: github
+    left: [intro, reference, articles, news]
+  right: github
   components:
     reference:
-      text: Reference
+      text: Functions
       href: reference/index.html
+      contents: 
+      - '`augment.ranef.mer`'
+      - '`brms_tidiers`'
+      - '`compact`'
+      - '`fixef.MCMCglmm`'
+      - '`gamlss_tidiers`'
+      - '`get_methods`'
+      - '`glmmTMB_tidiers`'
+      - '`glmmadmb_tidiers`'
+      - '`insert_NAs`'
+      - '`lme4_tidiers`'
+      - '`tidy.MCMCglmm`'
+      - '`nlme_tidiers`'
+      - '`ranef.MCMCglmm`'
+      - '`ranefLevels`'
+      - '`rstanarm_tidiers`'
+      - '`stdranef`'
+      - '`tidy.TMB`'
+      - '`tidy.varFunc`'
+      - '`unrowname`'
     github:
       icon: fab fa-github fa-lg
       href: https://github.com/bbolker/broom.mixed/
@@ -24,25 +44,5 @@ navbar:
       menu:
       - text: Introduction to `broom.mixed`
         href: articles/broom_mixed_intro.html
-reference:
-- title: All functions
-  contents:
-  - '`augment.ranef.mer`'
-  - '`brms_tidiers`'
-  - '`compact`'
-  - '`fixef.MCMCglmm`'
-  - '`gamlss_tidiers`'
-  - '`get_methods`'
-  - '`glmmTMB_tidiers`'
-  - '`glmmadmb_tidiers`'
-  - '`insert_NAs`'
-  - '`lme4_tidiers`'
-  - '`tidy.MCMCglmm`'
-  - '`nlme_tidiers`'
-  - '`ranef.MCMCglmm`'
-  - '`ranefLevels`'
-  - '`rstanarm_tidiers`'
-  - '`stdranef`'
-  - '`tidy.TMB`'
-  - '`tidy.varFunc`'
-  - '`unrowname`'
+
+
