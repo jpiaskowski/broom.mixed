@@ -28,15 +28,9 @@ jobs:
         with:
           use-public-rspm: true
           
-      - name: add glmmADMB
-        run: install.packages("glmmADMB",  repos=c("http://glmmadmb.r-forge.r-project.org/repos",
-            getOption("repos")), type="source")
-        shell: Rscript {0}
-
-
       - uses: r-lib/actions/setup-r-dependencies@v2
         with:
-          extra-packages: any::pkgdown, any::devtools, glmmadmb=?ignore, local::.
+          extra-packages: any::pkgdown, any::devtools, package=glmmadmb?ignore,  package=glmmADMB?ignore, local::.
           needs: website
           
 
