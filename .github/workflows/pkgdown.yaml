@@ -2,9 +2,28 @@
 # Need help debugging build failures? Start at https://github.com/r-lib/actions#where-to-find-help
 on:
   push:
-    branches: [main, master]
+    branches: [main, master]:
+    - ".github/workflows/pkgdown.yaml"
+    - "DESCRIPTION"
+    - "NAMESPACE"
+    - ".Rbuildignore"
+    - "man/**"
+    - "man-roxygen/**""
+    - "R/**"
+    - "inst/**"
+    - "vignettes/**"
   pull_request:
     branches: [main, master]
+        paths:
+    - ".github/workflows/pkgdown.yaml"
+    - "DESCRIPTION"
+    - "NAMESPACE"
+    - ".Rbuildignore"
+    - "man/**"
+    - "man-roxygen/**""
+    - "R/**"
+    - "inst/**"
+    - "vignettes/**"
   release:
     types: [published]
   workflow_dispatch:
@@ -22,7 +41,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - uses: r-lib/actions/setup-pan doc@v2
+      - uses: r-lib/actions/setup-pandoc@v2
 
       - uses: r-lib/actions/setup-r@v2
         with:
@@ -30,7 +49,7 @@ jobs:
           
       - uses: r-lib/actions/setup-r-dependencies@v2
         with:
-          extra-packages: any::pkgdown, any::devtools, glmmADMB=?ignore, local::.
+          extra-packages: any::pkgdown, glmmADMB=?ignore, local::.  
           needs: website
           
       - name: Build site
