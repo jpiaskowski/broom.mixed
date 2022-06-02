@@ -1,0 +1,20 @@
+TODO.md
+README.md
+man-roxygen
+.Rhistory
+.travis.yml
+misc/*
+^.*\.Rproj$
+^\.Rproj\.user$
+^.*.Rout
+## hidden files
+(^|/)\.+.*
+run_examples
+revdep/
+revdep
+^\.github$
+pix/
+
+^_pkgdown\.yml$
+^docs$
+^pkgdown$

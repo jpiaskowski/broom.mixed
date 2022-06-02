@@ -1,0 +1,5 @@
+url: https://jpiaskowski.github.io/broom.mixed/
+template:
+  bootstrap: 5
+development:
+  mode: auto

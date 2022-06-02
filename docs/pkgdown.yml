@@ -1,0 +1,7 @@
+pandoc: 2.11.4
+pkgdown: 2.0.3
+pkgdown_sha: ~
+articles:
+  broom_mixed_intro: broom_mixed_intro.html
+last_built: 2022-06-02T17:38Z
+
