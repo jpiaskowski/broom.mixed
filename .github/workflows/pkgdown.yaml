@@ -28,17 +28,18 @@ jobs:
         with:
           use-public-rspm: true
       
-      - name: set-up R dependencies (manually)
+      - name: set some special options
         run: |
-          pak::repo_add(glmmADMB = "http://glmmadmb.r-forge.r-project.org/repos")
-          pak::lockfile_create(c("deps::.", "any::pkgdown", "local::."), dependencies = TRUE)
-          pak::lockfile_install()
+          cat("pak::repo_add(glmmADMB = "http://glmmadmb.r-forge.r-project.org/repos")\n
+               pak::lockfile_create(c("deps::.", "any::pkgdown", "local::."), dependencies = TRUE)\n
+               pak::lockfile_install()", 
+          file = "~/.Rprofile", append = TRUE)
         shell: Rscript {0}
           
-      # - uses: r-lib/actions/setup-r-dependencies@v2
-      #   with:
-      #     extra-packages: any::pkgdown, glmmADMB=?ignore, local::.  
-      #     needs: website
+      - uses: r-lib/actions/setup-r-dependencies@v2
+        with:
+          extra-packages: any::pkgdown, local::.  
+          needs: website
           
       - name: Build site
         run: pkgdown::build_site_github_pages(new_process = FALSE, install = FALSE)
