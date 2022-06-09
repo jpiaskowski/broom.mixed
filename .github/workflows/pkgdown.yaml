@@ -30,8 +30,8 @@ jobs:
       
       - name: set some special options
         run: |
-          cat("pak::repo_add(glmmADMB = "http://glmmadmb.r-forge.r-project.org/repos")\n
-               pak::lockfile_create(c("deps::.", "any::pkgdown", "local::."), dependencies = TRUE)\n
+          cat("pak::repo_add(glmmADMB = 'http://glmmadmb.r-forge.r-project.org/repos/')\n 
+               pak::lockfile_create(c('deps::.', 'any::pkgdown', 'local::.'), dependencies = TRUE)\n
                pak::lockfile_install()", 
           file = "~/.Rprofile", append = TRUE)
         shell: Rscript {0}
