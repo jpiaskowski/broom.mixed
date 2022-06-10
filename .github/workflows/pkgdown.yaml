@@ -30,7 +30,7 @@ jobs:
       
       - name: set some special options for glmmADMB
         run: |
-          cat('options(repos = c("http://glmmadmb.r-forge.r-project.org/repos", "https://mirror.las.iastate.edu/CRAN/")'), 
+          cat('options(repos = c("http://glmmadmb.r-forge.r-project.org/repos", "https://cloud.r-project.org/")') 
           file = "~/.Rprofile", append = TRUE)
         shell: Rscript {0}
           
