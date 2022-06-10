@@ -30,7 +30,7 @@ jobs:
       
       - name: set some special options for glmmADMB
         run: |
-          cat('install.packages("pak")\n pak::repo_add(glmmADMB = "http://glmmadmb.r-forge.r-project.org/repos/"")\n pak::lockfile_create(c("deps::."", "any::pkgdown"", "local::."), dependencies = TRUE)\n pak::lockfile_install()', 
+          cat('options(repos = c("http://glmmadmb.r-forge.r-project.org/repos", "https://mirror.las.iastate.edu/CRAN/")'), 
           file = "~/.Rprofile", append = TRUE)
         shell: Rscript {0}
           
