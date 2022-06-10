@@ -28,11 +28,9 @@ jobs:
         with:
           use-public-rspm: true
       
-      - name: set some special options
+      - name: set some special options for glmmADMB
         run: |
-          cat("pak::repo_add(glmmADMB = 'http://glmmadmb.r-forge.r-project.org/repos/')\n 
-               pak::lockfile_create(c('deps::.', 'any::pkgdown', 'local::.'), dependencies = TRUE)\n
-               pak::lockfile_install()", 
+          cat('install.packages("pak")\n pak::repo_add(glmmADMB = "http://glmmadmb.r-forge.r-project.org/repos/"")\n pak::lockfile_create(c("deps::."", "any::pkgdown"", "local::."), dependencies = TRUE)\n pak::lockfile_install()', 
           file = "~/.Rprofile", append = TRUE)
         shell: Rscript {0}
           
